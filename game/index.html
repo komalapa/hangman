@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="width=device-width">
+    <title>Висилица</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <!--<script>
+        document.addEventListener("DOMContentLoaded", enterEvent); 
+    </script> -->
+</head>
+
+<body>
+    
+    <main>
+        <h1>Висилица</h1>
+
+        <div id="progress">
+            <canvas id="canvas" width="200" height="300"></canvas>
+        </div>
+    
+        <div id="game">
+            <input id="startButton" type="button" value="Начнем!" onclick="requestTheWord()">
+            <input id="helpButton" type="button" value="Помогите!" title="Открывает следующую букву, но засчитывает ход как ошибку" onclick="helpMe()">
+            <p> Сложность:
+            <input name="level" type="radio" value="0" onclick="changeLevel()"> 0
+            <input name="level" type="radio" value="1" checked onclick="changeLevel()"> 1
+            </p>
+            <p>
+            <input id="firstLetterCheckBox" type="checkbox"  checked onclick="showFirstLetter()">
+               Показать первую букву
+            </p>
+               
+                <div id="guess">
+                    <a>Введите букву</a>
+                    <input type="search" id="letter" size="3" maxlength="1" onload="enterEvent" onsearch ="game()" > <!--так с телефона удобнее что проверить букву можно "лупой" на клавиатуре-->
+                    <input id="ok" type="button" value="ok" onclick="game()">
+                    
+                </div>
+                <div id="word">
+                    <p>Слово:</p>
+                    <a class= "space">_</a>
+                    
+                </div>
+                <div id="misletters">
+                    <p>Ошибки:</p>
+                    <a class= "space">_</a>
+                </div>
+                <div id="messages">
+                сообщение пользователю
+                </div>
+            
+            
+        </div>
+    </main>
+</body>
+</html>

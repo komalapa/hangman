@@ -1,0 +1,63 @@
+html{
+    width : 100vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 300;
+}
+a {
+    display: inline-block;
+}
+#canvas {
+    /*border: 2px solid black;*/
+    margin: auto;
+   
+}
+input {
+    padding: 2px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+
+#misletters a {
+    border:1px solid black;
+    padding: 2px;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 1px;
+}
+
+#word a {
+    border:1px solid black;
+    padding: 2px;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 1px;
+
+}
+#progress {
+    border: 2px solid black;
+    
+    padding: 2vw;
+    margin:2vw;
+    float: left;
+    flex-wrap: wrap;
+}
+#game{
+    min-width: 300px;
+    border: 2px solid black;
+    padding: 2vw;
+    margin:2vw;
+    float: left;
+    flex-wrap: wrap;
+}
+
+
+
+
+.space{
+    visibility: hidden;
+}
